@@ -12,7 +12,7 @@
 <p class="lead">log clicks to an array</p>
 
 <p>{{ clickCount }}</p>
-<ul *ngFor="let click of clicks">
+<ul *ngFor="let click of clicks; let i = index">
   <li
-    [ngStyle]="{backgroundColor: click >= 5 ? 'blue' : 'transparent'}">{{ click }}</li>
+    [ngStyle]="{backgroundColor: i >= 5 ? 'blue' : 'transparent'}">{{ click }}</li>
 </ul>
