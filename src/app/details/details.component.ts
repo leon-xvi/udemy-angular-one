@@ -17,8 +17,8 @@ export class DetailsComponent implements OnInit {
 
   onToggleDisplay() {
     this.displayContent = !this.displayContent;
-    this.clickCount += 1;
-    this.clicks.push('click')
+    this.clickCount += 1
+    this.clicks.push(this.clickCount)
   }
 
 }

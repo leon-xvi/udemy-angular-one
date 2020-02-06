@@ -13,5 +13,6 @@
 
 <p>{{ clickCount }}</p>
 <ul *ngFor="let click of clicks">
-  <li>{{ click }}</li>
+  <li
+    [ngStyle]="{backgroundColor: click >= 5 ? 'blue' : 'transparent'}">{{ click }}</li>
 </ul>
