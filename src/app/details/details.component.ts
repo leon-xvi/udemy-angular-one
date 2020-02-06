@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
+  displayContent = true;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onToggleDisplay() {
+    this.displayContent = !this.displayContent;
   }
 
 }

@@ -1,1 +1,10 @@
-<p>details works!</p>
+<p class="lead">Add a button which says 'Display Details'</p>
+
+<button
+  class="btn btn-primary"
+  [innerHTML]="displayContent ? 'Display Details' : 'Show Details'"
+  (click)="onToggleDisplay()"></button>
+
+<p class="lead">Add a paragraph with content of your choice and hide it on the click of the button</p>
+
+<p [hidden]="displayContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est culpa fugit reiciendis debitis expedita aspernatur dolore dolorum, ducimus nesciunt fugiat illum natus rerum iure quisquam eius. Eveniet ratione similique quibusdam, dolor dignissimos ipsam illo. Distinctio nihil ipsam, quae, magni maxime suscipit qui rem aliquid beatae officia velit? Magnam, cupiditate dignissimos?</p>
