@@ -8,3 +8,10 @@
 <p class="lead">Add a paragraph with content of your choice and hide it on the click of the button</p>
 
 <p [hidden]="displayContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est culpa fugit reiciendis debitis expedita aspernatur dolore dolorum, ducimus nesciunt fugiat illum natus rerum iure quisquam eius. Eveniet ratione similique quibusdam, dolor dignissimos ipsam illo. Distinctio nihil ipsam, quae, magni maxime suscipit qui rem aliquid beatae officia velit? Magnam, cupiditate dignissimos?</p>
+
+<p class="lead">log clicks to an array</p>
+
+<p>{{ clickCount }}</p>
+<ul *ngFor="let click of clicks">
+  <li>{{ click }}</li>
+</ul>

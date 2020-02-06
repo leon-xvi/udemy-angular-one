@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
   displayContent = true;
+  clickCount = 0;
+  clicks = [];
 
   constructor() { }
 
@@ -15,6 +17,8 @@ export class DetailsComponent implements OnInit {
 
   onToggleDisplay() {
     this.displayContent = !this.displayContent;
+    this.clickCount += 1;
+    this.clicks.push('click')
   }
 
 }
